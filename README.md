@@ -63,7 +63,7 @@ Im Zweifel ist der richtige Einstiegspunkt immer eine Diskussion in den [GitHub 
 
 Die wohl offensichtlichste Komponente zur Anzeige des Ampelstatus.
 
-Eine genaue Beschreibung der Komponenten und die Dokumentation zum Nachbauen befindet sich [hier](http://case.md).
+Eine genaue Beschreibung der Komponenten und die Dokumentation zum nachbauen befindet sich [hier](http://case.md).
 
   
 
@@ -99,12 +99,12 @@ An der Ampel selbst ist keinerlei Änderung nötig. Diese wird weiterhin vom Amp
 
   
 
-## detaillierte Anleitungen
+## Detaillierte Anleitungen
 
   
 
-*   [Leezenflow-Gehäuse bauen](http://case.md)
-*   [Leezenflow Field-Guide](http://field-guide.md)
+*   [Leezenflow-Gehäuse bauen](case.md)
+*   [Leezenflow Field-Guide](field-guide.md)
 
   
 
