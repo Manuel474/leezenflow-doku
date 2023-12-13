@@ -2,21 +2,13 @@
 
 >[!IMPORTANT]
 ># Anmerkung vorab
->Diese Anleitung bezieht sich auf den Betrieb an schattigen Orten. Falls ein Betrieb in der prallen Sonne geplant ist, müssten andere (hellere) LED-Panels verwendet werden. Solche haben wir auch bereits in >ein paar Geräten verbaut. Für genauere Infos zu dem Custom-Image, bitte eine Anfrage an uns senden.
-
-  
+>Diese Anleitung bezieht sich auf den Betrieb an schattigen Orten. Falls ein Betrieb in der prallen Sonne geplant ist, müssten andere (hellere) LED-Panels verwendet werden. Solche haben wir auch bereits in ein paar Geräten verbaut. Für genauere Infos zu dem Custom-Image, bitte eine Anfrage an uns senden.
 
 # Gehäusebau
 
-  
-
 Diese Anleitung ist noch im Aufbau. Eventuell sind ein paar Informationen noch unvollständig oder fehlerhaft. [Vorschläge zu Verbesserungen](https://github.com/bCyberGmbH/leezenflow-doku#kollaboration) werden dankend entgegen genommen!
 
-  
-
-## Kostenaufstellung
-
-  
+## Was wir benutzt haben
 
 | Name | Anbieter | Link |
 | ---| ---| --- |
@@ -72,15 +64,10 @@ Diese Anleitung ist noch im Aufbau. Eventuell sind ein paar Informationen noch u
 | Silica-gel Beutel |  |  |
 | **Summe** |  |  |
 
-  
-
 Außerdem Werkzeug:
-
-  
 
 *   3D-Drucker (wir haben einen [Prusa i3 MK3S+ Drucker](https://shop.prusa3d.com/de/3d-drucker/181-original-prusa-i3-mk3s-drucker.html) und einen [Bambu Lab X1](https://eu.store.bambulab.com/de/products/x1-carbon-combo) benutzt)
 *   Gummihammer
-*   Stechbeitel
 *   Schmirgelpapier
 *   Holzspatel
 *   Malerkrepp-Klebeband
@@ -100,11 +87,7 @@ Außerdem Werkzeug:
 | Installation/Konfiguration/Einrichtung | 0,5 |
 | Summe | 3 |
 
-  
-
 ## Bestellung Rückwand + Scheibe
-
-  
 
 Maße und Details der Scheibe:
 
@@ -124,103 +107,60 @@ Maße und Details der Rückwand:
 *   Blech entgraten: Ja
 *   Material: 1,5mm Alublech AlMg3
 
-  
-
 ## 3D-Druck
-
-  
 
 Für den 3D-Druck haben wir einen [Prusa i3 MK3S+ Drucker](https://shop.prusa3d.com/de/3d-drucker/181-original-prusa-i3-mk3s-drucker.html) genutzt.
 
 Zum Slicen wurde [PrusaSlicer](https://www.prusa3d.de/prusaslicer/) verwendet. Als "Print Settings" haben wir die Voreinstellung 0.20mm QUALITY genutzt und nur einen Parameter angepasst: Infill -> [Combine infill every](https://help.prusa3d.com/en/article/infill_42#combine-infill-every-x-layers) von 1 auf 2 erhöht. Für die Filament Einstellung haben wir "Prusament PETG" ohne Anpassung genutzt.
 
-  
-
 Außerdem haben wir einen [Bambu Lab X1](https://eu.store.bambulab.com/de/products/x1-carbon-combo) mit Bambu PETG-CF Filament benutzt. Mit diesem konnten wir die Gehäuse um einiges schneller drucken als mit dem Prusa i3 MK3S+.
-
-  
 
 Alle `.stl` Dateien für den Druck befinden sich im Ordner [3d-print im Design Repository](https://github.com/bCyberGmbH/leezenflow-design/tree/main/3d-print).
 
 Die Datei `mast-halterung.stl` muss 2x gedruckt werden, alle anderen Dateien 1x.
 
-  
-
 ## Zusammenbau
 
-  
-
 Alle gedruckten Teile, mit dem Präfix `case` im Namen + die beiden Masthalterungen, müssen mit dem PVC-U Kleber verklebt werden. Hier nicht mit Kleber sparen! Die Klebestellen müssen später wasserdicht sein. Eventuelle Lücken können mit Sekundenkleber (da dieser dünnflüssiger ist) nachgebessert werden.
-
-  
 
 *   Zum Auftragen des Klebers sollte man z.B. Einweg-Holzspatel nutzen.
 *   Bei sehr warmen Wetter kann der Kleber zu schnell trocknen, am besten den Kleber vorher kühlen.
 *   Zum zusammenfügen der Teile kann es nötig sein (z.B. mit einem Gummihammer) ein wenig nachzuhelfen.
-*   Klebereste, die von außen zu sehen sind, sollten vor dem Lackieren (z.B. mit einem Stechbeitel) entfernt werden. Außerdem die Oberfläche mit Schmirgelpapier anrauen.
-
-  
+*   Klebereste, die von außen zu sehen sind, sollten vor dem Lackieren entfernt werden. Außerdem die Oberfläche mit Schmirgelpapier anrauen.
 
 Auch die seitlichen Halterungen am Gehäuse ankleben. Dazu die komplette Kontaktfläche mit Kleber bedecken.
 
-  
-
 ![Klebeflächen der Halterungen](bilder/halterung-klebeflaeche.png)
-
-  
 
 Darauf achten, die Halterungen komplett einzuschieben. Stehen die Halterungen zu weit oben, kann das Gehäuse undicht werden!
 
-  
-
 ![Halterungen einsetzen](bilder/halterung-einsetzen.png)
-
-  
 
 Nach dem Verkleben müssen noch die Gewindeeinsätze mit dem Lötkolben auf der Rückseite eingelassen werden. Dafür die Gewinde mit dem Lötkolben in die vorgedruckten Löcher drücken, bis sie bündig mit dem Gehäuse sind. Dabei darauf achten möglichst gleichmäßig und gerade Druck auszuüben, damit die Gewinde nicht schief werden.
 
-  
-
 Außerdem muss jeweils ein Gewindeeinsatz in die äußeren Löcher der Teile led-rahmen-seite-l.stl und led-rahmen-seite-r.stl eingelassen werden, um die Hutschiene zu befestigen.
 
-  
-
 ## Lackieren
-
-  
 
 Vor dem Lackieren sollten alle Schmirgelreste entfernt werden. Die Rückseite (die Seite mit den Gewindeeinsätzen) nicht lackieren! Am besten mit Malerkrepp-Klebeband abkleben. 2 Lackschichten auf allen Teilen sollten ausreichen.
 
 Zudem darauf achten, dass das Loch unten an der Vorderseite frei bleibt. Dies dient zum Abfluss von Regenwasser.
 
-  
-
 ![Position Abfluss](bilder/wasserabfluss.jpg)
-
-  
 
 Zusätzlich zum Gehäuse muss auch der LED Rahmen von oben (Orientierung genau wie auf dem Druckbett) lackiert werden.
 
-  
 ![Rahmen Lackierung](bilder/rahmen-lackieren.jpg)
-
-  
 
 
 ## Dichtungen
-
-  
 
 Die beiden Dichtungsrillen auf der Rückseite mit dem 2 mm doppelseitigem Klebeband auslegen. Anschließend die Rundschnur einkleben. Dabei die Naht der Schnur im unteren Bereich des Gehäuses platzieren (blauer Pfeil). Diesen Schritt sollte man am besten erst direkt vor dem anschrauben der Rückwand ausführen, da sich die Dichtungen sonst wieder ablösen könnten, wenn diese lange ohne Gegendruck herumliegen.
 
 
 ![Position der Dichtungen](bilder/dichtungen-position.png)
 
-  
-
 ## LED-Panels mit Rahmen einbauen
-
-  
 
 Das nachfolgende Bild zeigt die Position der Schrauben.
 
@@ -230,45 +170,25 @@ Rot markiert = M3x16 Schraube
 
 Gelb markiert = M4x8 Schraube
 
-  
-
 ![Position und Länge der Schrauben](bilder/rahmen-schrauben.png)
-
-  
 
 Achtung: Den Rahmen noch nicht komplett verschrauben. Er muss aus Platzgründen in 2 Schritten in das Gehäuse eingebaut werden.
 
-  
-
 Im ersten Schritt die abgebildeten Rahmenteile verschrauben und in das Gehäuse einlegen (wie abgebildet ohne das obere Rahmenteil):
-
-
 
 ![Schritt 1 Rahmen Einbau](bilder/rahmen-einbau.png)
 
-  
-
 Anschließend das fehlende Rahmenteil einfügen und mit dem LED-Panel verschrauben.
-
-  
 
 ### Raspberry PI
 
-  
-
 Die SD-Karte wie [hier](https://github.com/bCyberGmbH/leezenflow-code#installation) beschrieben vorbereiten und in den Raspberry einsetzen.
-
-  
 
 Den RGB LED Matrix Hat vorbereiten, wie in [leezenflow-code](https://github.com/bCyberGmbH/leezenflow-code#requirements) beschrieben (Brücke zwischen GPIO Pin 4 und 18 löten).
 
 Anschließend den RGB LED Matrix Hat auf den Raspberry stecken und mit den Hex-Spacern fixieren.
 
-  
-
 ### Einrichtung des Routers (wenn ein "GL-X750V2 Spitz" benutzt wird)
-
-  
 
 *   Sim Karte einsetzen
 *   Antennen mit Verlängerung anschrauben
@@ -281,34 +201,20 @@ Anschließend den RGB LED Matrix Hat auf den Raspberry stecken und mit den Hex-S
 *   APN einrichten
 *   More Settings ➝ Lan IP auf 10.0.0.1 ändern (dann kurz warten, bis der Router die IP übernimmt und dem Rechner eine neue IP aus dem Bereich gibt.)
 
-  
-
 ### M5 Atom lite einrichten
 
-  
-
-Den M5 Atom lite, das Voltmeter, den hub und den ENV Sensor wie folgt zusammenbauen und an den obersten Schruaben im Gehäuse verschrauben
+Den M5 Atom lite, das Voltmeter, den hub und den ENV Sensor wie folgt zusammenbauen und an den obersten Schrauben im Gehäuse verschrauben
 
 ![M5](bilder/m5.jpeg)
   
 
 !!!ToDo!!! (Beschreibung wie man den M5 einrichtet hier einfügen)
 
-  
-
-  
-
 ## Vorbereitung Einbau
-
-  
 
 Wir haben das Hutschienen-Netzteil mit der Stellschraube auf 5,2 V Ausgangsspannung eingestellt. Dadurch konnten wir ein etwas geringeres flackern bei den LED-Panels erzielen.
 
-  
-
 Die Enden des LED-Panel Stromkabels mit den Kabelschuhen abschneiden, abisolieren und mit den Aderendhülsen Crimpen.
-
-  
 
 Mehrere Fahrzeugleitungen vorbereiten (jeweils immer ein schwarzes und rotes Kabel):
 
@@ -319,29 +225,17 @@ Mehrere Fahrzeugleitungen vorbereiten (jeweils immer ein schwarzes und rotes Kab
 *   1x ca. 20cm für Wago-Klemme zu Hutschienen-Netzteil Input
     *   Beide Seiten abisolieren und nur eine Seite mit Aderendhülsen Crimpen
 
-  
-
 Das Stromkabel der OBU am Ende abschneiden und abisolieren, so dass man 2 rote und 2 schwarze Kabel hat.
-
-  
 
 Die 2 in 1 Antenne und die Einzelantenne mit den Adapterkabeln verbinden und an die OBU anschließen. Dabei auf die richtigen Anschlüsse achten. Das GNSS Kabel der 2 in 1 Antenne muss an den GNSS Anschluss der OBU.
 
-  
-
 Wir nutzen ein Custom-Image für die OBU, welches die Daten der Ampel mitschneidet, umwandelt und per MQTT an unseren Raspberry sendet. Für Infos zu dem Custom-Image, bitte eine Anfrage an uns senden.
 
-  
-
 ## Verkabelung und Hardware-Einbau
-
-  
 
 ### Verkabelung vor Kabelmanagement
 
 ![Verkabelung](bilder/verkabelung.jpg)
-
-  
 
 Zuerst das Hutschienen-Netzteil anbringen.
 
@@ -353,57 +247,33 @@ Anschließend das Flachbandkabel des LED-Panels mit dem RGB LED Matrix HAT verbi
 
 Danach können die Hardwarehalterungen angebracht werden. Dafür vorher auf der oberen Hardwarehalterung den Raspberry und auf der unteren die OBU, z.B. mit Kabelbindern, befestigen. Auf der OBU wird danach dann noch der LTE-Router befestigt und dann können die Hardwarehalterungen mit den M3x16 Schrauben auf dem Rahmen angebracht werden.
 
-  
-
 ![Hardwarehalterung](bilder/hardwarehalterung.jpg)
-
-  
 
 Für den Strom am Raspberry dann die eine 30cm Fahrzeugleitung an das Hutschienen-Netzteil anschließen und die andere Seite mit der DC Buchse in den LED-HAT stecken.
 
 Dann noch den Atom lite per USB Kabel mit dem Raspberry verbinden.
 
-  
-
 Als nächstes wird die 20cm Fahrzeugleitung mit den Aderendhülsen in den Input vom Hutschienen-Netzteil angeschlossen und die andere Seite wird in die 5er Wago-Klemmen gesteckt.
 
-  
-
 Danach das Stromkabel für den Router mit dem Router und den Wago-Klemmen verbinden und ebenso das Stromkabel der OBU mit der OBU und den Wago-Klemmen verbinden.
-
-  
 
 Dann die Antennen von dem Router und die Einzelantenne der OBU an die Antennenhalter anschrauben und am Rahmen Befestigen.
 
 Die 2 in 1 Antenne der OBU wird oben zwischen Decke des Gehäuses und der Sensorenhalterung angebracht. Dafür die Sensorenhalterung losschrauben, die Antenne zwischenschieben und die Halterung wieder möglichst eng anschrauben.
 
-
 Als nächstes können die Lankabel vom Pi und der OBU and den Router angeschlossen werden.
-
-
-  
 
 Danach wird der Silica-Gel Beutel ins Gehäuse gelegt und zuletzt müssen dann noch das Druckausgleichselement und die Kabeldurchführung mit dem 3m Stromkabel angebracht und das Stromkabel in die Wago-Klemmen gesteckt werden.
 
-  
-
 ## Scheibe einkleben
-
-  
 
 Die Scheibe muss eventuell an den Kanten noch etwas beigeschliffen werden. Anschließend die Scheibe mit dem Silirub ProN von vorne abdichten (grüne Linie).
 
 Dabei darauf achten, dass das Loch frei bleibt.
 
-  
-
 ![Silikon Pfad](bilder/scheibe-silikon-pfad.png)
 
-  
-
 ## Rückwand
-
-  
 
 In die Rückwand müssen an den Stellen der Gewindeeinsätze Löcher für die M4-Schrauben gebohrt werden. Ein Versuch, die Platte vom Zulieferer bohren zu lassen, war bei uns leider nicht erfolgreich (vermutlich wegen der leichten Toleranzen durch 3D Druck und Verkleben der Elemente).
 
